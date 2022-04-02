@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OokandGlukActivity2">
+
+
+    <Button
+        android:id="@+id/RequestBook"
+        android:layout_width="393dp"
+        android:layout_height="73dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Request A Book"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="---->"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BookTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="The adventures of Ook and Gluk"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+    <TextView
+        android:id="@+id/authorText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Author:"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/publisherText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookTitle" />
+
+    <TextView
+        android:id="@+id/publisherText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Publisher:"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/publishDateText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorTextView" />
+
+    <TextView
+        android:id="@+id/publishDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Publish Date:"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publisherTextView" />
+
+    <TextView
+        android:id="@+id/synopsisText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Synopsis:"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publishDateTextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:text="Dav pilkey"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/publisherText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorText" />
+
+    <TextView
+        android:id="@+id/publisherTextView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Scholastic"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/publisherText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publisherText" />
+
+    <TextView
+        android:id="@+id/publishDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:text="August 10th 2010"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/publishDateText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publishDateText" />
+
+    <TextView
+        android:id="@+id/synopsisTextView"
+        android:layout_width="0dp"
+        android:layout_height="169dp"
+        android:text="The Adventures of Ook and Gluk follow two cavemen who are pulled through a time portal in 500’001 B.C. and dropped into the year 2222. There they learn kung fu from martial arts instructor Master Wong so they can travel back in time with their new skills to save their hometown "
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/RequestBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/synopsisText"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="160dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookTitle"
+        app:srcCompat="@drawable/ookandgluk" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
