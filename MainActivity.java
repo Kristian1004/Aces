@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,12 +13,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        goMenuScreen();
+        goBrowseBooks();
+
     }
-    public void goNextPage(View view) {
-        startActivity(new Intent(MainActivity.this, MenuscreenActivity.class));
+
+    private void goMenuScreen(){
+        Button button = (Button) findViewById(R.id.MenuButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MenuscreenActivity.class));
+            }
+        });
     }
-    public void goBB(View view) {
-        startActivity(new Intent(MainActivity.this, browsebooks.class));
+    private void goBrowseBooks(){
+        Button button = (Button) findViewById(R.id.browseBooksButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, BrowseBooksActivity.class));
+            }
+        });
     }
+
 
 }
