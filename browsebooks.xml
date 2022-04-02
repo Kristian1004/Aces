@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#808080"
     tools:context=".MainActivity">
 
     <TextView
@@ -97,14 +98,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
+        android:backgroundTint="#808080"
         android:text="<-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="240dp"
-        android:layout_height="77dp"
+        android:layout_width="107dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -198,5 +201,14 @@
         android:src="@drawable/harrypottersorcerorstone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#808080"
+        android:text="All Books"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="683dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
