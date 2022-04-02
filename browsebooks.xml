@@ -98,6 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="#808080"
         android:text="<-"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -206,9 +207,11 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="#808080"
         android:text="All Books"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="683dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
