@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ContactUs">
+    tools:context=".contactusActivity">
 
 
 
@@ -98,10 +98,10 @@
         android:layout_width="373dp"
         android:layout_height="94dp"
         android:layout_marginTop="16dp"
-        android:text="This mini library houses a collection books that are handpicked and chosen by and for students. Please feel free to contact us on any comments and concerns! "
+        android:text="This mini library houses a collection of books that are handpicked and chosen by and for students. Please feel free to contact us on any comments and concerns! "
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -296,5 +296,3 @@
 
 ]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
