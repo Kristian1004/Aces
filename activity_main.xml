@@ -12,14 +12,13 @@
         android:id="@+id/textView"
         android:layout_width="279dp"
         android:layout_height="79dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="244dp"
         android:backgroundTint="#3F51B5"
         android:text="Mini Library"
         android:textColor="#FF5722"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.598"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +28,6 @@
         android:layout_height="60dp"
         android:layout_marginTop="4dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:onClick="goNextPage"
         android:text="Menu"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -37,28 +35,6 @@
         app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/SearchButton"
-        android:layout_width="133dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:text="Search"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="331dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
         android:id="@+id/Logo2"
@@ -68,34 +44,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="108dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SearchButton" />
-
     <Button
-        android:id="@+id/button2"
-        android:layout_width="380dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="148dp"
+        android:id="@+id/browseBooksButton"
+        android:layout_width="385dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:onClick="goBB"
-        android:text="@string/browse_books"
+        android:text="Browse Books"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SearchButton"
-        app:layout_constraintVertical_bias="0.551"
-        tools:ignore="UsingOnClickInXml" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
