@@ -69,9 +69,9 @@
     <ImageButton
         android:id="@+id/imageButton14"
         android:layout_width="65dp"
-        android:layout_height="99 dp"
+        android:layout_height="99dp"
         android:layout_marginStart="308dp"
-        android:layout_marginBottom="532dp"
+        android:layout_marginBottom="548dp"
         android:src="@drawable/lordoftherings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -160,9 +160,11 @@
         android:id="@+id/imageButton4"
         android:layout_width="65dp"
         android:layout_height="99dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="204dp"
         android:src="@drawable/stevesmall"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton6"
